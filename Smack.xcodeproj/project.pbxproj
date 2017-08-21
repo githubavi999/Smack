@@ -11,6 +11,8 @@
 		B944A8611F44920700D963D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B944A85F1F44920700D963D9 /* Main.storyboard */; };
 		B944A8631F44920700D963D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B944A8621F44920700D963D9 /* Assets.xcassets */; };
 		B944A8661F44920700D963D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B944A8641F44920700D963D9 /* LaunchScreen.storyboard */; };
+		B959354D1F4AB26B002646E7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B959354C1F4AB26B002646E7 /* Constants.swift */; };
+		B95B61161F4B05E500B92842 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95B61151F4B05E500B92842 /* LoginVC.swift */; };
 		B96029261F45617600D21D54 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B96029241F45617600D21D54 /* SWRevealViewController.m */; };
 		B960292B1F45671900D21D54 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B960292A1F45671900D21D54 /* ChatVC.swift */; };
 		B960292D1F45672B00D21D54 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B960292C1F45672B00D21D54 /* ChannelVC.swift */; };
@@ -27,6 +29,8 @@
 		B944A8651F44920700D963D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B944A8671F44920700D963D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B944A8701F44942100D963D9 /* Smack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Smack.entitlements; sourceTree = "<group>"; };
+		B959354C1F4AB26B002646E7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B95B61151F4B05E500B92842 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		B96029231F45617500D21D54 /* Smack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Smack-Bridging-Header.h"; sourceTree = "<group>"; };
 		B96029241F45617600D21D54 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "../../../../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.m"; sourceTree = "<group>"; };
 		B96029251F45617600D21D54 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "../../../../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.h"; sourceTree = "<group>"; };
@@ -70,6 +74,7 @@
 		B944A85A1F44920700D963D9 /* Smack */ = {
 			isa = PBXGroup;
 			children = (
+				B959354B1F4AB241002646E7 /* Utilities */,
 				B96029291F4566AC00D21D54 /* Model */,
 				B96029281F4566A500D21D54 /* View */,
 				B96029271F45669E00D21D54 /* Controller */,
@@ -92,6 +97,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B959354B1F4AB241002646E7 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B959354C1F4AB26B002646E7 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		B96029221F45610B00D21D54 /* Supporting FIle */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +120,7 @@
 			children = (
 				B960292A1F45671900D21D54 /* ChatVC.swift */,
 				B960292C1F45672B00D21D54 /* ChannelVC.swift */,
+				B95B61151F4B05E500B92842 /* LoginVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -280,9 +294,11 @@
 			files = (
 				B960292B1F45671900D21D54 /* ChatVC.swift in Sources */,
 				B944A85C1F44920700D963D9 /* AppDelegate.swift in Sources */,
+				B95B61161F4B05E500B92842 /* LoginVC.swift in Sources */,
 				B960292F1F45713A00D21D54 /* GradientView.swift in Sources */,
 				B96029261F45617600D21D54 /* SWRevealViewController.m in Sources */,
 				B960292D1F45672B00D21D54 /* ChannelVC.swift in Sources */,
+				B959354D1F4AB26B002646E7 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
