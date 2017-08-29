@@ -12,6 +12,7 @@
 		B944A8631F44920700D963D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B944A8621F44920700D963D9 /* Assets.xcassets */; };
 		B944A8661F44920700D963D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B944A8641F44920700D963D9 /* LaunchScreen.storyboard */; };
 		B959354D1F4AB26B002646E7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B959354C1F4AB26B002646E7 /* Constants.swift */; };
+		B95B29361F554174005386D9 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95B29351F554174005386D9 /* UserDataService.swift */; };
 		B95B61161F4B05E500B92842 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95B61151F4B05E500B92842 /* LoginVC.swift */; };
 		B95B61181F4B160900B92842 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95B61171F4B160900B92842 /* CreateAccountVC.swift */; };
 		B95E2F461F52B5A8008800DF /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95E2F451F52B5A8008800DF /* RoundedButton.swift */; };
@@ -33,6 +34,7 @@
 		B944A8671F44920700D963D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B944A8701F44942100D963D9 /* Smack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Smack.entitlements; sourceTree = "<group>"; };
 		B959354C1F4AB26B002646E7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B95B29351F554174005386D9 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		B95B61151F4B05E500B92842 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		B95B61171F4B160900B92842 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		B95E2F451F52B5A8008800DF /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				B944A8621F44920700D963D9 /* Assets.xcassets */,
 				B944A8641F44920700D963D9 /* LaunchScreen.storyboard */,
 				B944A8671F44920700D963D9 /* Info.plist */,
+				B95B29351F554174005386D9 /* UserDataService.swift */,
 			);
 			path = Smack;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				B960292B1F45671900D21D54 /* ChatVC.swift in Sources */,
 				B95E2F461F52B5A8008800DF /* RoundedButton.swift in Sources */,
 				B944A85C1F44920700D963D9 /* AppDelegate.swift in Sources */,
+				B95B29361F554174005386D9 /* UserDataService.swift in Sources */,
 				B95B61181F4B160900B92842 /* CreateAccountVC.swift in Sources */,
 				B9F5EB621F4DF03C00AC6819 /* AuthService.swift in Sources */,
 				B95B61161F4B05E500B92842 /* LoginVC.swift in Sources */,
