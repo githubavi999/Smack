@@ -98,7 +98,6 @@
 				B944A8621F44920700D963D9 /* Assets.xcassets */,
 				B944A8641F44920700D963D9 /* LaunchScreen.storyboard */,
 				B944A8671F44920700D963D9 /* Info.plist */,
-				B95B29351F554174005386D9 /* UserDataService.swift */,
 			);
 			path = Smack;
 			sourceTree = "<group>";
@@ -161,6 +160,7 @@
 		B9F5EB601F4DF02100AC6819 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				B95B29351F554174005386D9 /* UserDataService.swift */,
 				B9F5EB611F4DF03C00AC6819 /* AuthService.swift */,
 			);
 			path = Services;
