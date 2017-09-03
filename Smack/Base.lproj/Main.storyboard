@@ -377,7 +377,7 @@
                                     <action selector="loginBtnPressed:" destination="sLm-MI-MRl" eventType="touchUpInside" id="fAL-5N-LR1"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="9f2-lJ-rW8">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="9f2-lJ-rW8" customClass="Circleview" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="16" y="572" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="fbG-E1-bSp"/>
@@ -439,6 +439,7 @@
                     </view>
                     <connections>
                         <outlet property="loginBtn" destination="72p-63-SZk" id="Npw-jK-kPh"/>
+                        <outlet property="userImg" destination="9f2-lJ-rW8" id="uAg-Pd-Qpz"/>
                         <segue destination="Sh2-OM-bXq" kind="show" identifier="toLogin" id="hST-JC-ERg"/>
                     </connections>
                 </viewController>
