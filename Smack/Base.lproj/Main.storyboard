@@ -200,7 +200,7 @@
                                     <action selector="createAcctPressed:" destination="NYZ-1T-rVH" eventType="touchUpInside" id="p3U-N9-kgK"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="SVH-cf-F8W">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="SVH-cf-F8W" customClass="Circleview" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="138" y="325" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="Xlq-uu-jsr"/>
@@ -218,10 +218,15 @@
                                     <action selector="chooseAvatarPressed:" destination="NYZ-1T-rVH" eventType="touchUpInside" id="AWf-eQ-fw6"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="CgH-FG-62T">
+                                <rect key="frame" x="169" y="215" width="37" height="37"/>
+                                <color key="color" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Xz1-r7-xC1" firstAttribute="top" secondItem="SVH-cf-F8W" secondAttribute="bottom" constant="34" id="6jh-9d-Fpj"/>
+                            <constraint firstItem="CgH-FG-62T" firstAttribute="centerY" secondItem="TM8-lG-05R" secondAttribute="centerY" constant="-100" id="C3d-Pf-kBk"/>
                             <constraint firstItem="vWQ-Fv-VH2" firstAttribute="centerX" secondItem="SVH-cf-F8W" secondAttribute="centerX" id="C7j-B7-wkQ"/>
                             <constraint firstItem="IE3-eG-6GI" firstAttribute="top" secondItem="d0H-m2-pt9" secondAttribute="top" constant="54" id="DKZ-al-NPt"/>
                             <constraint firstItem="Xz1-r7-xC1" firstAttribute="trailing" secondItem="IE3-eG-6GI" secondAttribute="trailing" id="EyY-45-w3A"/>
@@ -236,6 +241,7 @@
                             <constraint firstItem="vWQ-Fv-VH2" firstAttribute="centerX" secondItem="TM8-lG-05R" secondAttribute="centerX" id="n74-OW-Fbu"/>
                             <constraint firstItem="Xz1-r7-xC1" firstAttribute="centerX" secondItem="TM8-lG-05R" secondAttribute="centerX" id="sQL-UO-sKA"/>
                             <constraint firstItem="rNk-mZ-Tzq" firstAttribute="centerX" secondItem="TM8-lG-05R" secondAttribute="centerX" id="y0c-FF-Kzd"/>
+                            <constraint firstItem="CgH-FG-62T" firstAttribute="centerX" secondItem="TM8-lG-05R" secondAttribute="centerX" id="z1B-J2-FyH"/>
                             <constraint firstItem="rNk-mZ-Tzq" firstAttribute="top" secondItem="IE3-eG-6GI" secondAttribute="bottom" constant="40" id="zjy-Q7-7C2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="d0H-m2-pt9"/>
@@ -244,6 +250,7 @@
                         <outlet property="emailTxt" destination="weD-S7-mLO" id="7Ih-AE-ykZ"/>
                         <outlet property="passwordTxt" destination="fwQ-oj-UPQ" id="lhU-zc-yMt"/>
                         <outlet property="profileImg" destination="SVH-cf-F8W" id="Gqb-Od-cxX"/>
+                        <outlet property="spinner" destination="CgH-FG-62T" id="D6x-fy-9EA"/>
                         <outlet property="usernameTxt" destination="UiE-9B-dHt" id="mFF-Fi-yR8"/>
                         <segue destination="cGS-4c-ALB" kind="unwind" identifier="unwindToChannel" unwindAction="pepareForUnwindWithSegue:" id="V52-Wz-Gqw"/>
                         <segue destination="gYL-sR-U4m" kind="show" identifier="toAvatarPicker" id="OTS-Qm-cox"/>
